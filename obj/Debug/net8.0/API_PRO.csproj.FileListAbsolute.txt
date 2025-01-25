@@ -170,3 +170,4 @@ D:\Visual_Projects\API_PRO\API_PRO\obj\Debug\net8.0\refint\API_PRO.dll
 D:\Visual_Projects\API_PRO\API_PRO\obj\Debug\net8.0\API_PRO.pdb
 D:\Visual_Projects\API_PRO\API_PRO\obj\Debug\net8.0\API_PRO.genruntimeconfig.cache
 D:\Visual_Projects\API_PRO\API_PRO\obj\Debug\net8.0\ref\API_PRO.dll
+D:\Visual_Projects\API_PRO\API_PRO\obj\Debug\net8.0\API_PRO.sourcelink.json

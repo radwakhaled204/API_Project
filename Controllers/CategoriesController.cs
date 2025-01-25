@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Http;
 using API_PRO.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using API_PRO.Data;
+using Azure;
+using Microsoft.AspNetCore.JsonPatch;
 
 
 namespace API_PRO.Controllers
@@ -21,9 +23,21 @@ namespace API_PRO.Controllers
         [HttpGet]
         public async Task<IActionResult> Getall()
         {
-            var cats = await _db.Categories.ToListAsync();
-            return Ok(cats);
+            var c= await _db.Categories.ToListAsync();
+            return Ok(c);
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Getbyid(int id)
+        {
+            var c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
+            if (c == null)
+            {
+                return NotFound($"Category Id {id} not found");
+            }
+
+            return Ok(c);
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddCategory(string category)
         {
@@ -41,6 +55,18 @@ namespace API_PRO.Controllers
                 return NotFound($"Category Id {category.Id} not found");
             }
             c.Name = category.Name;
+            _db.SaveChanges();
+            return Ok(c);
+        }
+        [HttpPatch("{Id}")]
+        public async Task<IActionResult> patchcategory([FromBody] JsonPatchDocument<Category> category , [FromRoute] int id)
+        {
+            var c = await _db.Categories.SingleOrDefaultAsync(x=> x.Id == id);
+            if (c ==null)
+            {
+                return NotFound($"Category Id {id} not found");
+            }
+            category.ApplyTo(c);
             _db.SaveChanges();
             return Ok(c);
         }

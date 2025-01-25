@@ -8,5 +8,7 @@ namespace API_PRO.Data.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+        [MaxLength(50)]
+        public string? note { get; set; }    
     }
 }
