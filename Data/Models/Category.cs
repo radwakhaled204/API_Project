@@ -9,6 +9,7 @@ namespace API_PRO.Data.Models
         [Required]
         public string Name { get; set; }
         [MaxLength(50)]
-        public string? note { get; set; }    
+        public string? note { get; set; }   
+        public List<ApiItem> apiitem { get; set; }
     }
 }

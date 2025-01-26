@@ -13,6 +13,8 @@ namespace API_PRO.Data
         {
 
         }
+        public DbSet<ApiItem> ApiItems { get; set; }
         public DbSet<Category> Categories { get; set; }
+      
     }
 }
