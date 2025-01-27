@@ -1,4 +1,4 @@
-# Project Name: Learning API
+#  Learning API
 
 ## Project Overview
 This project is an API built as a learning exercise to explore and implement new features, tools, and techniques in backend development. The main goal is to create a functional API that allows for experimenting with various features such as authentication, database interactions, error handling, and more.
