@@ -36,7 +36,7 @@ namespace API_PRO.Controllers
             return Ok(item);
         }
         [HttpPost]
-        public async Task<IActionResult> AddItem(mdlitem mdl)
+        public async Task<IActionResult> AddItem([FromForm]mdlitem mdl)
         {
             var stream = new MemoryStream();
             await mdl.Image.CopyToAsync(stream);
@@ -51,6 +51,28 @@ namespace API_PRO.Controllers
             await _db.ApiItems.AddAsync(item);
             _db.SaveChanges();
             return Ok(item);
+        }
+        [HttpGet("itemsINcategory/{categoryid}")]
+        public async Task<IActionResult> Getbycategoryid(int categoryid)
+        {
+            var item = await _db.ApiItems.Where(x => x.CategoryId == categoryid).ToListAsync();
+            if (item == null)
+            {
+                return NotFound($"id {categoryid} not exist in data");
+            }
+            return Ok(item);
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Deleteitem(int id)
+        {
+            var item = await _db.ApiItems.SingleOrDefaultAsync(x => x.Id == id);
+            if (item == null)
+            {
+                return NotFound($"id {id} not exist in data");
+            }
+             _db.ApiItems.Remove(item);
+            await _db.SaveChangesAsync();
+            return Ok("successfully delet");
         }
 
     }

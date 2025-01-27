@@ -58,7 +58,7 @@ namespace API_PRO.Controllers
             _db.SaveChanges();
             return Ok(c);
         }
-        [HttpPatch("{Id}")]
+        [HttpPatch("{id}")]
         public async Task<IActionResult> patchcategory([FromBody] JsonPatchDocument<Category> category , [FromRoute] int id)
         {
             var c = await _db.Categories.SingleOrDefaultAsync(x=> x.Id == id);
@@ -70,7 +70,7 @@ namespace API_PRO.Controllers
             _db.SaveChanges();
             return Ok(c);
         }
-        [HttpDelete("{Id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             var c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
