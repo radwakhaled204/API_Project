@@ -4,6 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using API_PRO.Data;
 using API_PRO.Data.Models;
 using API_PRO.Models;
+using System.Security.Cryptography;
+using static System.Net.Mime.MediaTypeNames;
+using static Azure.Core.HttpHeader;
 
 
 namespace API_PRO.Controllers
@@ -52,6 +55,32 @@ namespace API_PRO.Controllers
             _db.SaveChanges();
             return Ok(item);
         }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> edititem(int id , [FromForm] mdlitem mdl) 
+        {
+            var existeditem = await _db.ApiItems.FindAsync(id);
+            if (existeditem == null)
+            {
+                return NotFound($"id {id} not exist in data");
+            }
+            var categoryid = await _db.Categories.AnyAsync(x => x.Id == mdl.CategoryId);
+            if (categoryid == null)
+            {
+                return NotFound($"id {categoryid} not exist in data");
+            }
+            if (mdl.Image !=null)
+            {
+                using var stream = new MemoryStream();
+                await mdl.Image.CopyToAsync(stream);
+                existeditem.Image = stream.ToArray();   
+            }
+            existeditem.Name = mdl.Name;
+            existeditem.Price = mdl.Price;
+            existeditem.Notes = mdl.Notes;
+            existeditem.CategoryId = mdl.CategoryId;
+            _db.SaveChanges();
+            return Ok("successfully edited");
+        }
         [HttpGet("itemsINcategory/{categoryid}")]
         public async Task<IActionResult> Getbycategoryid(int categoryid)
         {
@@ -72,7 +101,7 @@ namespace API_PRO.Controllers
             }
              _db.ApiItems.Remove(item);
             await _db.SaveChangesAsync();
-            return Ok("successfully delet");
+            return Ok("successfully deleted");
         }
 
     }
