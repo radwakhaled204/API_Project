@@ -1,17 +1,31 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations;
+
 namespace API_PRO.Models
 {
-    public class OrderDto
+    public class dtoOrders
     {
-        public DateTime CreatedDate { set; get; }
-        public virtual ICollection<OrderItemsDto>? ordersItems { get; set; }
+        public int orderId { get; set; }
 
+        [Required]
+        public DateTime OrderDate { get; set; }
+
+        [MaxLength(100)]
+        public string OrederName { get; set; }
+
+        public ICollection<dtoOrdersItems> items { get; set; } = new List<dtoOrdersItems>();
     }
 
-    public class OrderItemsDto
+    public class dtoOrdersItems
     {
+        [Required]
+        public int itemId { get; set; }
         public string? itemName { get; set; }
-        public DateTime createdDate { get; set; }
+
+        [Required]
+        public decimal price { get; set; }
+
+        public int quantity { get; set; }
     }
 }
