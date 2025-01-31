@@ -17,12 +17,12 @@ namespace API_PRO.Data.Models
         [IgnoreDataMember]
         public virtual Order? orders { get; set; }
 
-        [ForeignKey(nameof(items))]
+        [ForeignKey(nameof(ApiItems))]
         public int ItemId { get; set; }
 
         [JsonIgnore]
         [IgnoreDataMember]
-        public virtual ApiItem? items { get; set; }
+        public virtual ApiItem? ApiItems { get; set; }
 
         [Required]
         public decimal Price { get; set; }

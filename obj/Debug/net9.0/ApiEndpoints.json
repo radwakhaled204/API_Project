@@ -231,25 +231,15 @@
   },
   {
     "ContainingType": "API_PRO.Controllers.OrderController",
-    "Method": "GetAllOrders",
-    "RelativePath": "api/Order",
+    "Method": "GetOrderById",
+    "RelativePath": "api/Order/one/{orderId}",
     "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_PRO.Controllers.OrderController",
-    "Method": "AddOrder",
-    "RelativePath": "api/Order",
-    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "order",
-        "Type": "API_PRO.Data.Models.Order",
+        "Name": "orderId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

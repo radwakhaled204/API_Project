@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(Options =>
-Options.UseSqlServer(
+ Options.UseLazyLoadingProxies().UseSqlServer(
     builder.Configuration.GetConnectionString("myConnection")));
 
 

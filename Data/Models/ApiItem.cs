@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace API_PRO.Data.Models
 {
@@ -14,6 +16,9 @@ namespace API_PRO.Data.Models
         public byte[]? Image { get; set; }
         [ForeignKey(nameof(category))]
         public int CategoryId { get; set; }
-        public Category category{ get; set; }
+        [JsonIgnore]
+        [IgnoreDataMember]
+
+        public virtual Category category{ get; set; }
     }
 }
