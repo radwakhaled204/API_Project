@@ -83,11 +83,32 @@ namespace API_PRO.Controllers
             return NotFound($"The Order Id {orderId} not Exists");
         }
 
-
-        //[HttpPost]
-        //public async Task<IActionResult> AddOrder(Order order)
-        //{
-        //    return Ok(order);
-        //}
+        [HttpPost]
+        public async Task<IActionResult> AddOrder([FromBody] dtoOrders order)
+        {
+            if (ModelState.IsValid)
+            {
+                Order mdl = new()
+                {
+                    CreatedDate = order.OrderDate,
+                    ordersItems = new List<OrderItem>()
+                };
+                foreach (var item in order.ApiItems)
+                {
+                    OrderItem orderItem = new()
+                    {
+                        ItemId = item.itemId,
+                        Price = item.price,
+                    };
+                    mdl.ordersItems.Add(orderItem);
+                }
+                await _db.Orders.AddAsync(mdl);
+                await _db.SaveChangesAsync();
+                order.orderId = mdl.id;
+                return Ok(order);
+            }
+            return BadRequest();
+        }
     }
 }
+
