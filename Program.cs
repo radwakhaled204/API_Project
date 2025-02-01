@@ -12,7 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
  Options.UseLazyLoadingProxies().UseSqlServer(
     builder.Configuration.GetConnectionString("myConnection")));
 
-
+builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
 // Add services to the container.
 
 builder.Services.AddControllers().AddNewtonsoftJson();
