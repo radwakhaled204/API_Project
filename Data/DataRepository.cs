@@ -14,12 +14,12 @@ namespace API_PRO.Data
             table = _db.Set<T>();
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+        public async Task<IEnumerable<T>> GetAllFun()
         {
             return await table.ToListAsync();
         }
 
-        public async Task<T> GetById(int id)
+        public async Task<T> GetByIdFun(int id)
         {
             var result = await table.FindAsync(id);
             if (result == null)
@@ -30,21 +30,21 @@ namespace API_PRO.Data
 
         }
 
-        public async Task Add(T entity)
+        public async Task AddFun(T entity)
         {
             await table.AddAsync(entity);
             await _db.SaveChangesAsync();
         }
 
-        public async Task Update(T entity)
+        public async Task UpdateFun(T entity)
         {
             table.Update(entity);
             await _db.SaveChangesAsync();
         }
 
-        public async Task Delete(int id)
+        public async Task DeleteFun(int id)
         {
-            var entity = await GetById(id);
+            var entity = await GetByIdFun(id);
             if (entity != null)
             {
                 table.Remove(entity);
