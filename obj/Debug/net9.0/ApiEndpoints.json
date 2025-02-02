@@ -262,6 +262,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_PRO.Controllers.SubjectController",
+    "Method": "GetAllSubjects",
+    "RelativePath": "api/Subject",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PRO.Controllers.SubjectController",
+    "Method": "AddSubject",
+    "RelativePath": "api/Subject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectDto",
+        "Type": "API_PRO.Models.SubjectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PRO.Controllers.SubjectController",
+    "Method": "GetSubjectById",
+    "RelativePath": "api/Subject/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PRO.Controllers.SubjectController",
+    "Method": "UpdateSubject",
+    "RelativePath": "api/Subject/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "subjectDto",
+        "Type": "API_PRO.Models.SubjectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PRO.Controllers.SubjectController",
+    "Method": "DeleteSubject",
+    "RelativePath": "api/Subject/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_PRO.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

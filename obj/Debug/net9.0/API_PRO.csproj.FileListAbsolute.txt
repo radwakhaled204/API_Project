@@ -173,3 +173,10 @@ D:\Visual_Projects\API_PRO\API_PRO\obj\Debug\net9.0\API_PRO.genruntimeconfig.cac
 D:\Visual_Projects\API_PRO\API_PRO\obj\Debug\net9.0\ref\API_PRO.dll
 D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Castle.Core.dll
 D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\AutoMapper.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
