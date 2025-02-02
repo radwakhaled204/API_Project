@@ -1,9 +1,13 @@
 
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using API_PRO.Data.Models;
+using API_PRO.Mapping;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using API_PRO.Data;
+using API_PRO.Extentions;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,12 +17,16 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
     builder.Configuration.GetConnectionString("myConnection")));
 
 builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
-// Add services to the container.
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+
+builder.Services.AddIdentity<Users, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
 builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGenJwtAuth();
+
+builder.Services.AddCustomJwtAuth(builder.Configuration);
 
 var app = builder.Build();
 
@@ -31,6 +39,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
