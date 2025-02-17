@@ -16,7 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
  Options.UseLazyLoadingProxies().UseSqlServer(
     builder.Configuration.GetConnectionString("myConnection")));
 
-builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
+builder.Services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddIdentity<Users, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
