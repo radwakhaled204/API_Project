@@ -14,73 +14,74 @@ namespace API_PRO.Controllers
     [ApiController]
     public class CategoriesController : Controller
     {
-        public CategoriesController(AppDbContext db)
+        private readonly IUnitOfWork _uow;
+        public CategoriesController(IUnitOfWork uow)
         {
-            _db = db;
+            _uow = uow;
         }
-        private readonly AppDbContext _db;
+        
 
         [HttpGet]
         public async Task<IActionResult> Getall()
         {
-            var c= await _db.Categories.ToListAsync();
+            var c = await _uow.categories.GetAllFun();
             return Ok(c);
         }
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Getbyid(int id)
-        {
-            var c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
-            if (c == null)
-            {
-                return NotFound($"Category Id {id} not found");
-            }
+        //[HttpGet("{id}")]
+        //public async Task<IActionResult> Getbyid(int id)
+        //{
+        //    var c = await _uow.Categories.SingleOrDefaultAsync(x => x.Id == id);
+        //    if (c == null)
+        //    {
+        //        return NotFound($"Category Id {id} not found");
+        //    }
 
-            return Ok(c);
-        }
+        //    return Ok(c);
+        //}
 
-        [HttpPost]
-        public async Task<IActionResult> AddCategory(string category)
-        {
-         Category c = new Category { Name = category };
-           await _db.Categories.AddAsync(c);   
-           _db.SaveChanges();
-            return Ok(c);
-        }
-        [HttpPut]
-        public async Task<IActionResult> PutCategory(Category category)
-        {
-            var c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == category.Id);
-            if (c ==null)
-            {
-                return NotFound($"Category Id {category.Id} not found");
-            }
-            c.Name = category.Name;
-            _db.SaveChanges();
-            return Ok(c);
-        }
-        [HttpPatch("{id}")]
-        public async Task<IActionResult> patchcategory([FromBody] JsonPatchDocument<Category> category , [FromRoute] int id)
-        {
-            var c = await _db.Categories.SingleOrDefaultAsync(x=> x.Id == id);
-            if (c ==null)
-            {
-                return NotFound($"Category Id {id} not found");
-            }
-            category.ApplyTo(c);
-            _db.SaveChanges();
-            return Ok(c);
-        }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCategory(int id)
-        {
-            var c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
-            if (c == null)
-            {
-                return NotFound($"Category Id {id} not found");
-            }
-            _db.Categories.Remove(c);
-            _db.SaveChanges();
-            return Ok(c);
-        }
+        //[HttpPost]
+        //public async Task<IActionResult> AddCategory(string category)
+        //{
+        // Category c = new Category { Name = category };
+        //   await _uow.Categories.AddAsync(c);
+        //    _uow.SaveChanges();
+        //    return Ok(c);
+        //}
+        //[HttpPut]
+        //public async Task<IActionResult> PutCategory(Category category)
+        //{
+        //    var c = await _uow.Categories.SingleOrDefaultAsync(x => x.Id == category.Id);
+        //    if (c ==null)
+        //    {
+        //        return NotFound($"Category Id {category.Id} not found");
+        //    }
+        //    c.Name = category.Name;
+        //    _uow.SaveChanges();
+        //    return Ok(c);
+        //}
+        //[HttpPatch("{id}")]
+        //public async Task<IActionResult> patchcategory([FromBody] JsonPatchDocument<Category> category , [FromRoute] int id)
+        //{
+        //    var c = await _uow.Categories.SingleOrDefaultAsync(x=> x.Id == id);
+        //    if (c ==null)
+        //    {
+        //        return NotFound($"Category Id {id} not found");
+        //    }
+        //    category.ApplyTo(c);
+        //    _db.SaveChanges();
+        //    return Ok(c);
+        //}
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteCategory(int id)
+        //{
+        //    var c = await _db.Categories.SingleOrDefaultAsync(x => x.Id == id);
+        //    if (c == null)
+        //    {
+        //        return NotFound($"Category Id {id} not found");
+        //    }
+        //    _db.Categories.Remove(c);
+        //    _db.SaveChanges();
+        //    return Ok(c);
+        //}
     }
 }
