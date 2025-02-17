@@ -14,8 +14,8 @@ namespace API_PRO.Controllers
     [ApiController]
     public class CategoriesController : Controller
     {
-        private readonly IUnitOfWork _uow;
-        public CategoriesController(IUnitOfWork uow)
+        private readonly IUnitOfWork<Category> _uow;
+        public CategoriesController(IUnitOfWork<Category> uow)
         {
             _uow = uow;
         }

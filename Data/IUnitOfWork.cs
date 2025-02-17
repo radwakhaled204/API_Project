@@ -1,9 +1,11 @@
 ﻿
+using API_PRO.Data.Models;
+
 namespace API_PRO.Data
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork<T> : IDisposable where T : class
     {
-      //  IDataRepository repo{ get; }
+       IDataRepository<Category> categories{ get; }
         int CommitChanges();
     }
 }

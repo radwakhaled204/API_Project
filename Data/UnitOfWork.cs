@@ -1,15 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using API_PRO.Data.Models;
+using API_PRO.Migrations;
+using Microsoft.EntityFrameworkCore;
 
 namespace API_PRO.Data
 {
     public class UnitOfWork<T> : IUnitOfWork  where T : class
     {
         private readonly AppDbContext _db;
-        public IDataRepository<T> repo { get; private set; }
+        
+        public IDataRepository<Category> categories { get; private set; }
         public UnitOfWork (AppDbContext db)
         {
             _db = db;
-            repo = new DataRepository<T>(db);
+            
+            categories = new DataRepository<Category>(db);
         }
         public int CommitChanges()
         {
