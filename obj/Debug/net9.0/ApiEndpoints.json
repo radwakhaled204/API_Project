@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "API_PRO.Controllers.AccountController",
+    "Method": "LogIn",
+    "RelativePath": "api/Account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "API_PRO.Models.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_PRO.Controllers.AccountController",
+    "Method": "RegisterNewUser",
+    "RelativePath": "api/Account/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "API_PRO.Models.NewUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_PRO.Controllers.CategoriesController",
     "Method": "Getall",
     "RelativePath": "api/Categories",
