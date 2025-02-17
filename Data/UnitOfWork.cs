@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API_PRO.Data
 {
-    public class UnitOfWork<T> : IUnitOfWork  where T : class
+    public class UnitOfWork<T> : IUnitOfWork<T>  where T : class
     {
         private readonly AppDbContext _db;
         
