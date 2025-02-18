@@ -15,6 +15,7 @@ namespace API_PRO.Data.Models
         public string? note { get; set; }
         [JsonIgnore]
         [IgnoreDataMember]
+        //one to many relationship with item table
         public virtual List<ApiItem> apiitem { get; set; }
     }
 }
