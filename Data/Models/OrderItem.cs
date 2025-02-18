@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 namespace API_PRO.Data.Models
 {
     public class OrderItem
-    {
+    { //this table is the relation between item and order
         [Key]
         public int Id { get; set; }
 
