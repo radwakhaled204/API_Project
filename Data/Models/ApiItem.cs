@@ -14,6 +14,8 @@ namespace API_PRO.Data.Models
         public string? Notes { get; set; }
         public double Price { get; set; }
         public byte[]? Image { get; set; }
+
+        //one to many relationship with Category table
         [ForeignKey(nameof(category))]
         public int CategoryId { get; set; }
         [JsonIgnore]
