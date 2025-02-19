@@ -3,7 +3,7 @@ using API_PRO.Data.Models;
 using API_PRO.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
+
 
 namespace API_PRO.Controllers
 {
@@ -13,13 +13,13 @@ namespace API_PRO.Controllers
     {
         private readonly IDataRepository<Subject> _subjectRepository;
         private readonly IMapper _mapper;
-        private readonly IHostingEnvironment _env;
 
-        public SubjectController(IDataRepository<Subject> subjectRepository, IMapper mapper , IHostingEnvironment env)
+
+        public SubjectController(IDataRepository<Subject> subjectRepository, IMapper mapper )
         {
             _subjectRepository = subjectRepository;
             _mapper = mapper;
-            _env = env;
+          
         }
 
       
