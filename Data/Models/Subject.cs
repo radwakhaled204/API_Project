@@ -16,9 +16,9 @@ namespace API_PRO.Data.Models
         public int NumExams { get; set; } = 0;
 
         public int TotalQuestions { get; set; } = 0;
-        public string? filepath { get; set; }
-        [NotMapped]
-        public IFormFile file { get; set; }
+
+
+
 
         //public required int UserId { get; set; }
 
