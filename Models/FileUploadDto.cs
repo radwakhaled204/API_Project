@@ -3,5 +3,8 @@
     public class FileUploadDto
     {
         
+        public string filepath { get; set; }    
+        public int subid { get; set; }
+
     }
 }
