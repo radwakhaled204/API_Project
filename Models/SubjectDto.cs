@@ -9,5 +9,6 @@ namespace API_PRO.Models
         public string SubjectName { get; set; }
         public int NumExams { get; set; }
         public int TotalQuestions { get; set; }
+
     }
 }
