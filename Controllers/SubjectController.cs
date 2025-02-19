@@ -86,6 +86,27 @@ namespace API_PRO.Controllers
             await _subjectRepository.DeleteFun(id);
             return NoContent();
         }
+        //[HttpPost("upload-dto")]
+        //public async Task<IActionResult> UploadFileWithDto([FromForm] FileUploadDto dto)
+        //{
+        //    if (dto.File == null || dto.File.Length == 0)
+        //        return BadRequest("الملف غير موجود أو فارغ.");
+
+        //    var uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
+
+        //    if (!Directory.Exists(uploadsFolder))
+        //        Directory.CreateDirectory(uploadsFolder);
+
+        //    var filePath = Path.Combine(uploadsFolder, dto.File.FileName);
+
+        //    using (var stream = new FileStream(filePath, FileMode.Create))
+        //    {
+        //        await dto.File.CopyToAsync(stream);
+        //    }
+
+        //    return Ok(new { Message = "تم الرفع بنجاح!", FileName = dto.File.FileName });
+        //}
+
     }
 }
 
