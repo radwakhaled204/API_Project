@@ -1,12 +1,331 @@
 {
   "Version": 1,
-  "Hash": "7h5zvzM52HpgPtgzfaCAJTNfYzCzq6BlQ8r6pTVioJE=",
+  "Hash": "k2MkjGwNg1s6OtHHW9muTteeXWy2DEIr1jKuDlOU+As=",
   "Source": "API_PRO",
   "BasePath": "_content/API_PRO",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "API_PRO\\wwwroot",
+      "Source": "API_PRO",
+      "ContentRoot": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\",
+      "BasePath": "_content/API_PRO",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
+      "SourceId": "API_PRO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\",
+      "BasePath": "_content/API_PRO",
+      "RelativePath": "uploads/8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2vv27nogkq",
+      "Integrity": "Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf"
+    },
+    {
+      "Identity": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Disscuss time.pdf",
+      "SourceId": "API_PRO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\",
+      "BasePath": "_content/API_PRO",
+      "RelativePath": "uploads/Disscuss time#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bt0dngs6dp",
+      "Integrity": "Xzz96PI9d1Ea/VKXr7BP2Uf44Jvt4svmXLVyg+VoG6E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Disscuss time.pdf"
+    },
+    {
+      "Identity": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Doc1.pdf",
+      "SourceId": "API_PRO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\",
+      "BasePath": "_content/API_PRO",
+      "RelativePath": "uploads/Doc1#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1m2euxbo3v",
+      "Integrity": "R0nbPGwXYYHnFlTbYc/d4IxEtkHb244E1cRVEVqrAaU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Doc1.pdf"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.2vv27nogkq.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:55:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2vv27nogkq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:55:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Disscuss time.bt0dngs6dp.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Disscuss time.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "278037"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xzz96PI9d1Ea/VKXr7BP2Uf44Jvt4svmXLVyg+VoG6E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:37:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bt0dngs6dp"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Disscuss time.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xzz96PI9d1Ea/VKXr7BP2Uf44Jvt4svmXLVyg+VoG6E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Disscuss time.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Disscuss time.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "278037"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xzz96PI9d1Ea/VKXr7BP2Uf44Jvt4svmXLVyg+VoG6E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:37:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xzz96PI9d1Ea/VKXr7BP2Uf44Jvt4svmXLVyg+VoG6E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Doc1.1m2euxbo3v.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Doc1.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R0nbPGwXYYHnFlTbYc/d4IxEtkHb244E1cRVEVqrAaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:38:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1m2euxbo3v"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Doc1.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R0nbPGwXYYHnFlTbYc/d4IxEtkHb244E1cRVEVqrAaU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Doc1.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Doc1.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R0nbPGwXYYHnFlTbYc/d4IxEtkHb244E1cRVEVqrAaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:38:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R0nbPGwXYYHnFlTbYc/d4IxEtkHb244E1cRVEVqrAaU="
+        }
+      ]
+    }
+  ]
 }

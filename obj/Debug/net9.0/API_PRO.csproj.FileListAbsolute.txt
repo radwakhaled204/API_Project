@@ -180,3 +180,4 @@ D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptog
 D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Visual_Projects\API_PRO\API_PRO\bin\Debug\net9.0\API_PRO.staticwebassets.runtime.json

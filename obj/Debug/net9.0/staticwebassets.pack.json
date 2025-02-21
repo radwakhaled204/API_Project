@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
+      "PackagePath": "staticwebassets\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf"
+    },
+    {
+      "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Disscuss time.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Disscuss time.pdf"
+    },
+    {
+      "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Doc1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Doc1.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API_PRO.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API_PRO.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.API_PRO.props",
+      "PackagePath": "build\\API_PRO.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.API_PRO.props",
+      "PackagePath": "buildMultiTargeting\\API_PRO.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.API_PRO.props",
+      "PackagePath": "buildTransitive\\API_PRO.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
