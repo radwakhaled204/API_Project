@@ -32,10 +32,10 @@ namespace API_PRO.Controllers
                 return BadRequest("الملف غير موجود.");
 
      
-            if (string.IsNullOrEmpty(_env.WebRootPath))
-            {
-                _env.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
-            }
+            //if (string.IsNullOrEmpty(_env.WebRootPath))
+            //{
+            //    _env.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+            //}
 
             var filefolder = Path.Combine(_env.WebRootPath, "uploads");
 
@@ -45,8 +45,8 @@ namespace API_PRO.Controllers
             }
 
            
-            var uniqueFileName = $"{Guid.NewGuid()}_{filedto.file.FileName}";
-            var filepath = Path.Combine(filefolder, uniqueFileName);
+            //var uniqueFileName = $"{Guid.NewGuid()}_{filedto.file.FileName}";
+            var filepath = Path.Combine(filefolder, filedto.file.FileName);
 
       
             using (var stream = new FileStream(filepath, FileMode.Create))
@@ -58,7 +58,7 @@ namespace API_PRO.Controllers
             var fileRecord = new Files
             {
                 FileName = filedto.file.FileName, 
-                FilePath = $"/uploads/{uniqueFileName}", 
+                FilePath = $"/uploads/{filedto.file.FileName}", 
                 SubjectId = filedto.subid           
             };
 
