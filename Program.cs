@@ -16,6 +16,8 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
  Options.UseLazyLoadingProxies().UseSqlServer(
     builder.Configuration.GetConnectionString("myConnection")));
 
+builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
+
 builder.Services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
@@ -29,6 +31,13 @@ builder.Services.AddSwaggerGenJwtAuth();
 builder.Services.AddCustomJwtAuth(builder.Configuration);
 
 var app = builder.Build();
+if (string.IsNullOrEmpty(app.Environment.WebRootPath))
+{
+    app.Environment.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+}
+
+// «·”„«Õ »«·„·›«  «·À«» …
+app.UseStaticFiles();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
