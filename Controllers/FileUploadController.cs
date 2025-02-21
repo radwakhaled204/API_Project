@@ -32,10 +32,7 @@ namespace API_PRO.Controllers
                 return BadRequest("الملف غير موجود.");
 
      
-            //if (string.IsNullOrEmpty(_env.WebRootPath))
-            //{
-            //    _env.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
-            //}
+
 
             var filefolder = Path.Combine(_env.WebRootPath, "uploads");
 
@@ -44,7 +41,7 @@ namespace API_PRO.Controllers
                 Directory.CreateDirectory(filefolder);
             }
 
-           
+           //if you need uniqename
             //var uniqueFileName = $"{Guid.NewGuid()}_{filedto.file.FileName}";
             var filepath = Path.Combine(filefolder, filedto.file.FileName);
 
@@ -58,7 +55,8 @@ namespace API_PRO.Controllers
             var fileRecord = new Files
             {
                 FileName = filedto.file.FileName, 
-                FilePath = $"/uploads/{filedto.file.FileName}", 
+                FilePath = $"/uploads/{filedto.file.FileName}",
+                //$"/uploads/{uniqueFileName}"
                 SubjectId = filedto.subid           
             };
 
