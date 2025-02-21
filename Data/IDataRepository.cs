@@ -2,6 +2,7 @@
 {
     public interface IDataRepository<T> where T : class
     {
+        
         Task<IEnumerable<T>> GetAllFun();
         Task<T> GetByIdFun(int id);
         Task AddFun(T entity);
