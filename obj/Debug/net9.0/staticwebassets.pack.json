@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\2.SWE Schedule Spring Lectures (2)-1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\2.SWE Schedule Spring Lectures (2)-1.pdf"
+    },
+    {
       "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
       "PackagePath": "staticwebassets\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf"
     },
@@ -11,6 +15,14 @@
     {
       "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Doc1.pdf",
       "PackagePath": "staticwebassets\\uploads\\Doc1.pdf"
+    },
+    {
+      "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Huawei Letter.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Huawei Letter.pdf"
+    },
+    {
+      "Id": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\جدول مناقشات المشاريع.pdf",
+      "PackagePath": "staticwebassets\\uploads\\جدول مناقشات المشاريع.pdf"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API_PRO.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k2MkjGwNg1s6OtHHW9muTteeXWy2DEIr1jKuDlOU+As=",
+  "Hash": "05kAbaowcP/0MSEoDloPaOVCNvz8gesEanhKYayKMSQ=",
   "Source": "API_PRO",
   "BasePath": "_content/API_PRO",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\2.SWE Schedule Spring Lectures (2)-1.pdf",
+      "SourceId": "API_PRO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\",
+      "BasePath": "_content/API_PRO",
+      "RelativePath": "uploads/2.SWE Schedule Spring Lectures (2)-1#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6i9qw08rr9",
+      "Integrity": "nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2.SWE Schedule Spring Lectures (2)-1.pdf"
+    },
     {
       "Identity": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
       "SourceId": "API_PRO",
@@ -78,9 +99,133 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Doc1.pdf"
+    },
+    {
+      "Identity": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Huawei Letter.pdf",
+      "SourceId": "API_PRO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\",
+      "BasePath": "_content/API_PRO",
+      "RelativePath": "uploads/Huawei Letter#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2vv27nogkq",
+      "Integrity": "Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Huawei Letter.pdf"
+    },
+    {
+      "Identity": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\جدول مناقشات المشاريع.pdf",
+      "SourceId": "API_PRO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\",
+      "BasePath": "_content/API_PRO",
+      "RelativePath": "uploads/جدول مناقشات المشاريع#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m1a7ur9v7b",
+      "Integrity": "ZlfGDqm0+wibd4LrLakh534XB6PMrEAvQIa8Xuqwhdc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\جدول مناقشات المشاريع.pdf"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "uploads/2.SWE Schedule Spring Lectures (2)-1.6i9qw08rr9.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\2.SWE Schedule Spring Lectures (2)-1.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276006"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 14:22:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6i9qw08rr9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/2.SWE Schedule Spring Lectures (2)-1.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/2.SWE Schedule Spring Lectures (2)-1.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\2.SWE Schedule Spring Lectures (2)-1.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276006"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 14:22:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps="
+        }
+      ]
+    },
     {
       "Route": "uploads/8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.2vv27nogkq.pdf",
       "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf",
@@ -324,6 +469,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-R0nbPGwXYYHnFlTbYc/d4IxEtkHb244E1cRVEVqrAaU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Huawei Letter.2vv27nogkq.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Huawei Letter.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:08:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2vv27nogkq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Huawei Letter.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Huawei Letter.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\Huawei Letter.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:08:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mk8MEEihkTOUScjdve/UNdnrjj5/5GkJ04daw4tHweI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/جدول مناقشات المشاريع.m1a7ur9v7b.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\جدول مناقشات المشاريع.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlfGDqm0+wibd4LrLakh534XB6PMrEAvQIa8Xuqwhdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 14:26:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1a7ur9v7b"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/جدول مناقشات المشاريع.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlfGDqm0+wibd4LrLakh534XB6PMrEAvQIa8Xuqwhdc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/جدول مناقشات المشاريع.pdf",
+      "AssetFile": "D:\\Visual_Projects\\API_PRO\\API_PRO\\wwwroot\\uploads\\جدول مناقشات المشاريع.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlfGDqm0+wibd4LrLakh534XB6PMrEAvQIa8Xuqwhdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 14:26:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlfGDqm0+wibd4LrLakh534XB6PMrEAvQIa8Xuqwhdc="
         }
       ]
     }
