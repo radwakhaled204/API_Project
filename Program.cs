@@ -21,7 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
 
 //2-add IDataRepository and DataRepository
 builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
-
+builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 //3-add IUnitOfWork and UnitOfWork
 builder.Services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
 
@@ -36,6 +36,7 @@ builder.Services.AddEndpointsApiExplorer();
 //7-add jwt configrations
 builder.Services.AddSwaggerGenJwtAuth();
 builder.Services.AddCustomJwtAuth(builder.Configuration);
+
 builder.Services.AddIdentity<Users, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
 var app = builder.Build();
