@@ -12,6 +12,9 @@ namespace API_PRO.Mapping
             CreateMap<Subject, SubjectDto>();
         
             CreateMap<SubjectDto, Subject>();
+            CreateMap<Users, UserDto>();
+
+            CreateMap<UserDto, Users>();
         }
     }
 
