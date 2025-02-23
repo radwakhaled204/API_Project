@@ -7,5 +7,6 @@ namespace API_PRO.Data.Models
 
     public class Users : IdentityUser
     {
+
     }
 }
