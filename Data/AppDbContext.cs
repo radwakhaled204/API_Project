@@ -1,13 +1,15 @@
 ﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+
 using Microsoft.EntityFrameworkCore.SqlServer;
 using API_PRO.Data.Models;
 using API_PRO.Data;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace API_PRO.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<Users>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
