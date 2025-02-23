@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 
 namespace API_PRO.Data.Models
 {
@@ -25,6 +26,7 @@ namespace API_PRO.Data.Models
         public virtual ApiItem? ApiItems { get; set; }
 
         [Required]
+        [Precision(18, 2)]
         public decimal Price { get; set; }
     }
 }
