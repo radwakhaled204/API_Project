@@ -43,7 +43,7 @@ namespace API_PRO.Data
 
             if (!result.Succeeded)
             {
-                return null; // يمكن التعامل مع الأخطاء لاحقًا
+                return null; 
             }
 
             return user;
