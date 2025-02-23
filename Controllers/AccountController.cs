@@ -35,7 +35,7 @@ namespace API_PRO.Controllers
 
             registerDto.Email = registerDto.Email.ToLower();
 
-            // التحقق مما إذا كان البريد الإلكتروني مستخدمًا بالفعل
+          
             if (await _userManager.FindByEmailAsync(registerDto.Email) != null)
             {
                 return BadRequest("Email already exists");
@@ -43,7 +43,7 @@ namespace API_PRO.Controllers
 
             var user = new Users
             {
-                UserName = registerDto.Username, // IdentityUser يحتوي على UserName
+                UserName = registerDto.Username, 
                 Email = registerDto.Email
             };
 
