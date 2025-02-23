@@ -1,31 +1,15 @@
 [
   {
     "ContainingType": "API_PRO.Controllers.AccountController",
-    "Method": "LogIn",
-    "RelativePath": "api/Account",
+    "Method": "Register",
+    "RelativePath": "api/Account/registeruser",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "login",
-        "Type": "API_PRO.Models.LoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_PRO.Controllers.AccountController",
-    "Method": "RegisterNewUser",
-    "RelativePath": "api/Account/Register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "API_PRO.Models.NewUserDto",
+        "Name": "registerDto",
+        "Type": "API_PRO.Models.UserDto",
         "IsRequired": true
       }
     ],
