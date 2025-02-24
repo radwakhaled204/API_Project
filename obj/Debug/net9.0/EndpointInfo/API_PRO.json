@@ -11,7 +11,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Account/registeruser": {
+    "/api/Account/register": {
       "post": {
         "tags": [
           "Account"
