@@ -2,13 +2,13 @@
   {
     "ContainingType": "API_PRO.Controllers.AccountController",
     "Method": "Register",
-    "RelativePath": "api/Account/registeruser",
+    "RelativePath": "api/Account/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "registerDto",
+        "Name": "register",
         "Type": "API_PRO.Models.UserDto",
         "IsRequired": true
       }
