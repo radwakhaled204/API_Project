@@ -16,97 +16,51 @@ namespace API_PRO.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        public AccountController(UserManager<Users> userManager, IConfiguration configuration, IMapper mapper , IAuthRepository authRepository)
+        public AccountController(UserManager<Users> userManager, IConfiguration configuration, IMapper mapper )
         {
              _mapper = mapper;
             _userManager = userManager;
             this.configuration = configuration;
-            _authRepository = authRepository;
+      
         }
 
         private readonly UserManager<Users> _userManager;
         private readonly IConfiguration configuration;
         private readonly IMapper _mapper;
-        private readonly IAuthRepository _authRepository;
-        [HttpPost("registeruser")]
-        public async Task<IActionResult> Register([FromBody] UserDto registerDto)
+ 
+
+
+        [HttpPost("Register")]
+        public async Task<IActionResult> RegisterUser([FromBody] UserDto regdto)
         {
-            if (registerDto == null) return BadRequest("Invalid user data");
-
-            registerDto.Email = registerDto.Email.ToLower();
-
-          
-            if (await _userManager.FindByEmailAsync(registerDto.Email) != null)
+            if (regdto == null) return BadRequest("Please Full Form");
+            regdto.Email = regdto.Email.ToLower();
+            var exsist = await _userManager.FindByEmailAsync(regdto.Email);
+            if (exsist != null)
             {
-                return BadRequest("Email already exists");
+                return BadRequest("Email is already Exsist");
             }
-
             var user = new Users
             {
-                UserName = registerDto.Username, 
-                Email = registerDto.Email
+                UserName=regdto.Username,
+                Email=regdto.Email,
             };
-
-            var result = await _userManager.CreateAsync(user, registerDto.Password);
-
-            if (!result.Succeeded)
+            IdentityResult result = await _userManager.CreateAsync(user, regdto.Password);
+            if (result.Succeeded)
             {
-                return BadRequest(result.Errors);
+                return Ok("success");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
             }
 
-            return Ok(new { message = "User registered successfully" });
+            return BadRequest(ModelState);
         }
 
-
-
-        //[HttpPost]
-        //public async Task<IActionResult> LogIn(LoginDto login)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        Users? user = await _userManager.FindByNameAsync(login.userName);
-        //        if (user != null)
-        //        {
-        //            if (await _userManager.CheckPasswordAsync(user, login.password))
-        //            {
-        //                var claims = new List<Claim>();
-        //                //claims.Add(new Claim("name", "value"));
-        //                claims.Add(new Claim(ClaimTypes.Name, user.UserName));
-        //                claims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id));
-        //                claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
-        //                var roles = await _userManager.GetRolesAsync(user);
-        //                foreach (var role in roles)
-        //                {
-        //                    claims.Add(new Claim(ClaimTypes.Role, role.ToString()));
-        //                }
-        //                //signingCredentials
-        //                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:SecretKey"]));
-        //                var sc = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-        //                var token = new JwtSecurityToken(
-        //                    claims: claims,
-        //                    issuer: configuration["JWT:Issuer"],
-        //                    audience: configuration["JWT:Audience"],
-        //                    expires: DateTime.Now.AddHours(1),
-        //                    signingCredentials: sc
-        //                    );
-        //                var _token = new
-        //                {
-        //                    token = new JwtSecurityTokenHandler().WriteToken(token),
-        //                    expiration = token.ValidTo,
-        //                };
-        //                return Ok(_token);
-        //            }
-        //            else
-        //            {
-        //                return Unauthorized();
-        //            }
-        //        }
-        //        else
-        //        {
-        //            ModelState.AddModelError("", "User Name is invalid");
-        //        }
-        //    }
-        //    return BadRequest(ModelState);
-        //}
+        
     }
 }
