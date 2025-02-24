@@ -9,16 +9,15 @@ namespace API_PRO.Data.Models
         [Key]
         public int FileId { get; set; }
 
-        public string? FilePath { get; set; }  // مسار الملف المخزن
-        public string? FileName { get; set; }  // اسم الملف الأصلي
-
+        public string? FilePath { get; set; }  
+        public string? FileName { get; set; }  
         [ForeignKey("Subject")]
-        public int SubjectId { get; set; }  // مفتاح خارجي
+        public int SubjectId { get; set; } 
 
         public virtual Subject Subject { get; set; }
 
         [NotMapped]
-        public IFormFile File { get; set; }  // لن يتم تخزينه في قاعدة البيانات
+        public IFormFile File { get; set; }  
     }
 
 }
