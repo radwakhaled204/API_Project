@@ -21,7 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
 
 //2-add IDataRepository and DataRepository
 builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
-builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+
 //3-add IUnitOfWork and UnitOfWork
 builder.Services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
 
