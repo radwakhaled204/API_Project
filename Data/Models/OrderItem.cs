@@ -24,7 +24,7 @@ namespace API_PRO.Data.Models
         [JsonIgnore]
         [IgnoreDataMember]
         public virtual ApiItem? ApiItems { get; set; }
-
+        //12
         [Required]
         [Precision(18, 2)]
         public decimal Price { get; set; }
