@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace API_PRO.Data.Models
 {
-
+    //12
     public class Users : IdentityUser
     {
 
