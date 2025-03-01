@@ -41,8 +41,6 @@ builder.Services.AddIdentity<Users, IdentityRole>().AddEntityFrameworkStores<App
 
 var app = builder.Build();
 
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
