@@ -31,9 +31,6 @@ namespace API_PRO.Controllers
             if (filedto.file == null || filedto.file.Length == 0)
                 return BadRequest("الملف غير موجود.");
 
-     
-
-
             var filefolder = Path.Combine(_env.WebRootPath, "uploads");
 
             if (!Directory.Exists(filefolder))
@@ -45,7 +42,6 @@ namespace API_PRO.Controllers
             //var uniqueFileName = $"{Guid.NewGuid()}_{filedto.file.FileName}";
             var filepath = Path.Combine(filefolder, filedto.file.FileName);
 
-      
             using (var stream = new FileStream(filepath, FileMode.Create))
             {
                 await filedto.file.CopyToAsync(stream);
@@ -62,7 +58,7 @@ namespace API_PRO.Controllers
 
             await _filerepo.AddFun(fileRecord); 
 
-            return Ok(new { message = "تم تحميل الملف بنجاح.", path = fileRecord.FilePath });
+            return Ok(new { message = "File Uploaded Successfully", path = fileRecord.FilePath });
         }
 
 
