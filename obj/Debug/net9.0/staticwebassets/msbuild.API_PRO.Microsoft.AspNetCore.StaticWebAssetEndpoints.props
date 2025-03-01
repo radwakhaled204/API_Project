@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\2.SWE Schedule Spring Lectures (2)-1.pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6i9qw08rr9"},{"Name":"integrity","Value":"sha256-nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps="},{"Name":"label","Value":"_content/API_PRO/uploads/2.SWE Schedule Spring Lectures (2)-1.pdf"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"276006"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 14:22:35 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"276006"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 19:26:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/API_PRO/uploads/2.SWE Schedule Spring Lectures (2)-1.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\2.SWE Schedule Spring Lectures (2)-1.pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"276006"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 14:22:35 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"276006"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022nhIvz/ftowh2hbzO87GxjfKs098ZE2YsXuyDTZpQfps=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 19:26:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/API_PRO/uploads/8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.2vv27nogkq.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8e55d338-62d0-4c76-9683-3fe9fa716023_Huawei Letter.pdf'))</AssetFile>
