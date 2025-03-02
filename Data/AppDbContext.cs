@@ -15,6 +15,7 @@ namespace API_PRO.Data
         {
 
         }//12
+        public DbSet<Exam> Exam { get; set; }
         public DbSet<ApiItem> ApiItems { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Order> Orders { get; set; }
