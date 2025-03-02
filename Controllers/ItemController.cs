@@ -10,7 +10,7 @@ using static Azure.Core.HttpHeader;
 
 
 namespace API_PRO.Controllers
-{//6
+{//12
     [Route("api/[controller]")]
     [ApiController]
     public class ItemController : Controller
