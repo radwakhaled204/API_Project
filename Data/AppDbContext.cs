@@ -14,7 +14,7 @@ namespace API_PRO.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
-        }//12
+        }
         public DbSet<Exam> Exam { get; set; }
         public DbSet<ApiItem> ApiItems { get; set; }
         public DbSet<Category> Categories { get; set; }
