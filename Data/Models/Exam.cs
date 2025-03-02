@@ -37,19 +37,16 @@ namespace API_PRO.Data.Models
             //we must to make the forign key nullable to avoid migrations problem
             [ForeignKey("FileId")]
             public int? FileId { get; set; }
-            [JsonIgnore]
-            [IgnoreDataMember]
-            public Files? File { get; set; }
+         
+            public virtual Files? File { get; set; }
             public int UserId { get; set; }
 
             public int? SubjectId { get; set; }
 
-            [JsonIgnore]
-            [IgnoreDataMember]
-            public Subject? Subject { get; set; }
-            [JsonIgnore]
-            [IgnoreDataMember]
-            public Users? User { get; set; }
+
+        public virtual Subject? Subject { get; set; }
+
+        public virtual Users? User { get; set; }
         }
     
 }
