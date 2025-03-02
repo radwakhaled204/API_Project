@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.JsonPatch;
 
 
 namespace API_PRO.Controllers
-{//3
+{//12
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : Controller
