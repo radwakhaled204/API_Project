@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 
 namespace API_PRO.Controllers
-{//8
+{//12
     [Route("api/[controller]")]
     [ApiController]
     public class SubjectController : Controller
