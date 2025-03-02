@@ -64,7 +64,7 @@ namespace API_PRO.Controllers
             //    return Ok(examDto);
             //}
             //NEW
-            [HttpGet("all/{userId}")]
+            //[HttpGet("all/{userId}")]
             //public async Task<IActionResult> GetAllExamByUserId(int userId, [FromQuery] int? subId = null)
             //{
             //    //var exams = await _examRepo.GetAllExambyUserFun(userId, subId);
