@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using API_PRO.Data;
 using API_PRO.Extentions;
 using Microsoft.AspNetCore.Identity;
+using Hangfire;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +39,16 @@ builder.Services.AddSwaggerGenJwtAuth();
 builder.Services.AddCustomJwtAuth(builder.Configuration);
 
 builder.Services.AddIdentity<Users, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+
+builder.Services.AddHangfire(config =>
+    config.SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
+          .UseSimpleAssemblyNameTypeSerializer()
+          .UseRecommendedSerializerSettings()
+          .UseSqlServerStorage(builder.Configuration.GetConnectionString("defaultDbContext")));
+
+
+builder.Services.AddHangfireServer();
+//builder.Services.AddScoped<DailyResetService>();
 
 var app = builder.Build();
 
