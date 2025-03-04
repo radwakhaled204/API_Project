@@ -93,10 +93,7 @@ namespace API_PRO.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(int id)
         {
-          
-
-            await _itemRepository.DeleteFun(id);
-          
+            await _itemRepository.DeleteFun(id);          
             return Ok("successfully deleted");
         }
 
