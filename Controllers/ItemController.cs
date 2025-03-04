@@ -36,11 +36,8 @@ namespace API_PRO.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Getbyid(int id)
         {
-            var item = await _db.ApiItems.SingleOrDefaultAsync(x => x.Id == id);
-            if (item == null)
-            {
-                return NotFound($"id {id} not exist in data");
-            }
+            var item = await _itemRepository.GetByIdFun(id);
+
             return Ok(item);
         }
         [HttpPost]
