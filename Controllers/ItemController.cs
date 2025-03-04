@@ -53,8 +53,8 @@ namespace API_PRO.Controllers
                 CategoryId = mdl.CategoryId,
                 Image = stream.ToArray()
             };
-            await _db.ApiItems.AddAsync(item);
-            _db.SaveChanges();
+            await _itemRepository.AddFun(item);
+        
             return Ok(item);
         }
         [HttpPut("{id}")]
