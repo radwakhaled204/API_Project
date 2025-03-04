@@ -7,6 +7,7 @@ using API_PRO.Models;
 using System.Security.Cryptography;
 using static System.Net.Mime.MediaTypeNames;
 using static Azure.Core.HttpHeader;
+using AutoMapper;
 
 
 namespace API_PRO.Controllers
@@ -16,11 +17,15 @@ namespace API_PRO.Controllers
     public class ItemController : Controller
     {
 
-        public ItemController (AppDbContext db)
+        public ItemController (AppDbContext db , IDataRepository<ApiItem> itemRepository, IMapper map)
         {
             _db = db;
+            _itemRepository = itemRepository;
+            _map = map; 
         }
         private readonly AppDbContext _db;
+        private readonly IDataRepository<ApiItem> _itemRepository;
+        private readonly IMapper _map;
         [HttpGet]
         public async Task<IActionResult> Getall()
         {
@@ -39,7 +44,7 @@ namespace API_PRO.Controllers
             return Ok(item);
         }
         [HttpPost]
-        public async Task<IActionResult> AddItem([FromForm]mdlitem mdl)
+        public async Task<IActionResult> AddItem([FromForm] ItemDto mdl)
         {
             var stream = new MemoryStream();
             await mdl.Image.CopyToAsync(stream);
@@ -56,7 +61,7 @@ namespace API_PRO.Controllers
             return Ok(item);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> edititem(int id , [FromForm] mdlitem mdl) 
+        public async Task<IActionResult> edititem(int id , [FromForm] ItemDto mdl) 
         {
             var existeditem = await _db.ApiItems.FindAsync(id);
             if (existeditem == null)
