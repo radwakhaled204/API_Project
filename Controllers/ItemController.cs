@@ -81,7 +81,7 @@ namespace API_PRO.Controllers
             return Ok("successfully edited");
         }
         [HttpGet("itemsINcategory/{categoryid}")]
-        public async Task<IActionResult> Getbycategoryid(int categoryid)
+        public async Task<IActionResult> GetByCategoryId(int categoryid)
         {
             var item = await _db.ApiItems.Where(x => x.CategoryId == categoryid).ToListAsync();
             if (item == null)
@@ -91,15 +91,12 @@ namespace API_PRO.Controllers
             return Ok(item);
         }
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Deleteitem(int id)
+        public async Task<IActionResult> DeleteItem(int id)
         {
-            var item = await _db.ApiItems.SingleOrDefaultAsync(x => x.Id == id);
-            if (item == null)
-            {
-                return NotFound($"id {id} not exist in data");
-            }
-             _db.ApiItems.Remove(item);
-            await _db.SaveChangesAsync();
+          
+
+            await _itemRepository.DeleteFun(id);
+          
             return Ok("successfully deleted");
         }
 
