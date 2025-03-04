@@ -27,14 +27,14 @@ namespace API_PRO.Controllers
         private readonly IDataRepository<ApiItem> _itemRepository;
         private readonly IMapper _map;
         [HttpGet]
-        public async Task<IActionResult> Getall()
+        public async Task<IActionResult> GetAll()
         {
             var items = await _itemRepository.GetAllFun();
 
             return Ok(items);
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> Getbyid(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             var item = await _itemRepository.GetByIdFun(id);
 
@@ -58,13 +58,10 @@ namespace API_PRO.Controllers
             return Ok(item);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> edititem(int id , [FromForm] ItemDto mdl) 
+        public async Task<IActionResult> EditItem(int id , [FromForm] ItemDto mdl) 
         {
-            var existeditem = await _db.ApiItems.FindAsync(id);
-            if (existeditem == null)
-            {
-                return NotFound($"id {id} not exist in data");
-            }
+            var existeditem = await _itemRepository.GetByIdFun(id);
+
             var categoryid = await _db.Categories.AnyAsync(x => x.Id == mdl.CategoryId);
             if (categoryid == null)
             {
