@@ -29,7 +29,7 @@ namespace API_PRO.Controllers
         [HttpGet]
         public async Task<IActionResult> Getall()
         {
-            var items = await _db.ApiItems.ToListAsync();
+            var items = await _itemRepository.GetAllFun();
 
             return Ok(items);
         }
