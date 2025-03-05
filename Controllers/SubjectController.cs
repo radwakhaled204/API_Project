@@ -60,21 +60,21 @@ namespace API_PRO.Controllers
         }
 
         
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateSubject(int id, SubjectDto subjectDto)
-        {
-            var subject = await _subjectRepository.GetByIdFun(id);
-            if (subject == null)
-            {
-                return NotFound();
-            }
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> UpdateSubject(int id, SubjectDto subjectDto)
+        //{
+        //    var subject = await _subjectRepository.GetByIdFun(id);
+        //    if (subject == null)
+        //    {
+        //        return NotFound();
+        //    }
 
          
-            _mapper.Map(subjectDto, subject);
+        //    _mapper.Map(subjectDto, subject);
 
-            await _subjectRepository.UpdateFun(subject);
-            return NoContent();
-        }
+        //    await _subjectRepository.UpdateFun(subject);
+        //    return NoContent();
+        //}
 
        
         [HttpDelete("{id}")]
