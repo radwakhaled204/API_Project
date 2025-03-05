@@ -7,6 +7,7 @@ namespace API_PRO.Models
 
         [Required]
         public string SubjectName { get; set; }
+        //num of exam
         public int NumExams { get; set; }
         public int TotalQuestions { get; set; }
 
