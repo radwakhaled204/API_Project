@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_PRO.Controllers
-{//12
+{
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : Controller
@@ -15,14 +15,14 @@ namespace API_PRO.Controllers
             _db = db;
         }
         private readonly AppDbContext _db;
-        //7
-        //[HttpGet]
-        //public async Task<IActionResult> GetAllOrders()
-        //{
-        //    var orders = _db.Orders.Include(t => t.ordersItems).ThenInclude(t => t.ApiItems);
-  
-        //    return Ok(orders);
-        //}
+      
+        [HttpGet]
+        public async Task<IActionResult> GetAllOrders()
+        {
+            var orders = _db.Orders.Include(t => t.ordersItems).ThenInclude(t => t.ApiItems);
+
+            return Ok(orders);
+        }
 
 
         //[HttpGet("one/{orderId}")]
