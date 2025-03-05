@@ -9,7 +9,7 @@ namespace API_PRO.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class ExamController : Controller
-    {//12
+    {
 
         private readonly IDataRepository<Exam> _examRepo;
             private readonly IDataRepository<Subject> _subjectRepo;
