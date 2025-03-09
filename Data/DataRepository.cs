@@ -7,7 +7,7 @@ namespace API_PRO.Data
     {
         private readonly AppDbContext _db;
         private readonly DbSet<T> table;
-        //12//12
+      
         public DataRepository(AppDbContext db)
         {
             _db = db;
