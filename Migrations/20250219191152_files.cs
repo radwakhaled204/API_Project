@@ -22,6 +22,7 @@ namespace API_PRO.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Filepath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SubjectId = table.Column<int>(type: "int", nullable: true)
+                    //set  nullable: true
                 }, 
                 constraints: table =>
                 {
