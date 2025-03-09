@@ -16,7 +16,7 @@ namespace API_PRO.Data.Models
         public int SubjectId { get; set; } 
 
         public virtual Subject Subject { get; set; }
-
+        // don't add it in database
         [NotMapped]
         public IFormFile File { get; set; }  
     }
