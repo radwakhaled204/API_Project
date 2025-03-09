@@ -32,7 +32,10 @@ namespace API_PRO.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     OrderId = table.Column<int>(type: "int", nullable: false),
                     ItemId = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Price = table.Column<decimal>(type: "decimal(18,2)",
+                    nullable: false,
+                    defaultValue: 1
+                    )
                 },
                 constraints: table =>
                 {
@@ -42,15 +45,15 @@ namespace API_PRO.Migrations
                         column: x => x.ItemId,
                         principalTable: "ApiItems",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetDefault);
                     table.ForeignKey(
                         name: "FK_OrderItems_Orders_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetDefault);
                 });
-
+            //change ReferentialAction to SetDefault
             migrationBuilder.CreateIndex(
                 name: "IX_OrderItems_ItemId",
                 table: "OrderItems",
