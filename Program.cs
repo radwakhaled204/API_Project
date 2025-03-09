@@ -62,8 +62,7 @@ if (string.IsNullOrEmpty(app.Environment.WebRootPath))
 {
     app.Environment.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 }//==builder.WebHost.UseWebRoot("wwwroot");
-//1
-// 
+
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
