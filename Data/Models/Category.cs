@@ -9,9 +9,10 @@ namespace API_PRO.Data.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Enter the name")]
+        [MaxLength(50 , ErrorMessage = "The Max Length is 50")]
         public string Name { get; set; }
-        [MaxLength(50)]
+        [MaxLength(50, ErrorMessage = "The Max Length is 50")]
         public string? note { get; set; }
         [JsonIgnore]
         [IgnoreDataMember]
