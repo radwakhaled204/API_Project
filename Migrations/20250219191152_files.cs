@@ -21,8 +21,8 @@ namespace API_PRO.Migrations
                     FileId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Filepath = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SubjectId = table.Column<int>(type: "int", nullable: false)
-                },
+                    SubjectId = table.Column<int>(type: "int", nullable: true)
+                }, 
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Files", x => x.FileId);
@@ -31,8 +31,8 @@ namespace API_PRO.Migrations
                         column: x => x.SubjectId,
                         principalTable: "Subject",
                         principalColumn: "SubjectId",
-                        onDelete: ReferentialAction.Cascade);
-                });
+                        onDelete: ReferentialAction.SetNull);
+                });//change ReferentialAction to SetNull
 
             migrationBuilder.CreateIndex(
                 name: "IX_Files_SubjectId",
