@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 
 namespace API_PRO.Data.Models
-{//11
+{
     public class Category
     {
         [Key]
