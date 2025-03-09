@@ -30,9 +30,9 @@ namespace API_PRO.Migrations
                         column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
-
+            // change ReferentialAction to Restrict
             migrationBuilder.CreateIndex(
                 name: "IX_ApiItems_CategoryId",
                 table: "ApiItems",
