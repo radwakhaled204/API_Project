@@ -10,6 +10,7 @@ namespace API_PRO.Data.Models
         public int FileId { get; set; }
 
         public string? FilePath { get; set; }  
+        [Required(ErrorMessage ="Enter File Name")]
         public string? FileName { get; set; }  
         [ForeignKey("Subject")]
         public int SubjectId { get; set; } 
