@@ -35,7 +35,7 @@ namespace API_PRO.Migrations
                     Price = table.Column<decimal>(type: "decimal(18,2)",
                     nullable: false,
                     defaultValue: 1
-                    )
+                    )//set defaultValue
                 },
                 constraints: table =>
                 {
