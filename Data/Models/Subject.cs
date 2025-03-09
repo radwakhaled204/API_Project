@@ -4,13 +4,13 @@ using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 
 namespace API_PRO.Data.Models
-{//12
+{
     public class Subject
     {
         [Key]
         public int SubjectId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Enter Subject Name")]
         public required string SubjectName { get; set; }
 
         public int NumExams { get; set; } = 0;
