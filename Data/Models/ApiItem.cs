@@ -14,7 +14,8 @@ namespace API_PRO.Data.Models
         [Column("TheName")]
         public string Name { get; set; }
         public string? Notes { get; set; }
-        public double Price { get; set; }
+       
+        public double Price { get; set; } = 0;
         public byte[]? Image { get; set; }
 
         //one to many relationship with Category table
