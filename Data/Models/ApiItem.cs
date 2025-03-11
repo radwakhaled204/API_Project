@@ -11,6 +11,7 @@ namespace API_PRO.Data.Models
         public int Id { get; set; }
 
         [MaxLength(50 , ErrorMessage ="The Max Length is 50")]
+        [Column("TheName")]
         public string Name { get; set; }
         public string? Notes { get; set; }
         public double Price { get; set; }
