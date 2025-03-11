@@ -20,7 +20,7 @@
         public int? TotalScore { get; set; }
         public int XpCollected { get; set; }
         public int? UserId { get; set; }
-        public int? SubjectId { get; set; }
+        public int SubjectId { get; set; }
         public int? FileId { get; set; }
 
     }

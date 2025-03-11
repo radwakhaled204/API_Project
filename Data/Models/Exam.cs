@@ -41,7 +41,7 @@ namespace API_PRO.Data.Models
             public virtual Files? File { get; set; }
             public int UserId { get; set; }
 
-            public int? SubjectId { get; set; }
+            public int SubjectId { get; set; }
 
 
         public virtual Subject? Subject { get; set; }
