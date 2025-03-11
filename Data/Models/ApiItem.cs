@@ -14,7 +14,7 @@ namespace API_PRO.Data.Models
         [Column("TheName")]
         public string Name { get; set; }
         public string? Notes { get; set; }
-       
+        //set default value
         public double Price { get; set; } = 0;
         public byte[]? Image { get; set; }
 
