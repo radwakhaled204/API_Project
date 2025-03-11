@@ -10,8 +10,8 @@ namespace API_PRO.Data.Models
 
             [Key]
             public int ExamId { get; set; }
-        //NEW
-        [Column("exam_name" , TypeName ="varchar(20)")]
+       //change the name in data and set another type 
+            [Column("exam_name" , TypeName ="varchar(20)")]
             public required string ExamName { get; set; }
 
             public string QuestionType { get; set; }
