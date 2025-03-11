@@ -23,6 +23,7 @@ namespace API_PRO.Data
         public DbSet<Users> User { get; set; }
         public DbSet<Files> Files { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        //fluent Api 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             foreach (var relation in modelBuilder.Model.GetEntityTypes()
