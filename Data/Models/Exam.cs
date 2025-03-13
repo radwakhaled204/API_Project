@@ -12,6 +12,7 @@ namespace API_PRO.Data.Models
             public int ExamId { get; set; }
        //change the name in data and set another type 
             [Column("exam_name" , TypeName ="varchar(20)")]
+            [Required]
             public required string ExamName { get; set; }
 
             public string QuestionType { get; set; }
