@@ -5,7 +5,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_PRO.Controllers
-{
+{ //ExamController
     [Route("api/[controller]")]
     [ApiController]
     public class ExamController : Controller
@@ -55,24 +55,24 @@ namespace API_PRO.Controllers
                 var examDto = _map.Map<ExamDto>(exam);
                 return Ok(examDto);
             }
-            //[HttpGet("all/{subId}")]
-            //public async Task<IActionResult> GetAllExamBySubId(int subId)
-            //{
-            //    var exams = await _examRepo.GetAllExambysubFun(subId);
+        //[HttpGet("all/{subId}")]
+        //public async Task<IActionResult> GetAllExamBySubId(int subId)
+        //{
+        //    var exams = await _examRepo.GetAllExambysubFun(subId);
 
-            //    var examDto = _map.Map<IEnumerable<ExamDto>>(exams);
-            //    return Ok(examDto);
-            //}
-            //NEW
-            //[HttpGet("all/{userId}")]
-            //public async Task<IActionResult> GetAllExamByUserId(int userId, [FromQuery] int? subId = null)
-            //{
-            //    //var exams = await _examRepo.GetAllExambyUserFun(userId, subId);
+        //    var examDto = _map.Map<IEnumerable<ExamDto>>(exams);
+        //    return Ok(examDto);
+        //}
+        //NEW
+        //[HttpGet("all/{userId}")]
+        //public async Task<IActionResult> GetAllExamByUserId(int userId, [FromQuery] int? subId = null)
+        //{
+        //    //var exams = await _examRepo.GetAllExambyUserFun(userId, subId);
 
-            //    //var viewExamDto = _map.Map<IEnumerable<ViewExamDto>>(exams);
-            //    return Ok(viewExamDto);
-            //}
-            [HttpDelete("deleteprogress/{id}")]
+        //    //var viewExamDto = _map.Map<IEnumerable<ViewExamDto>>(exams);
+        //    return Ok(viewExamDto);
+        //}
+        [HttpDelete("deleteprogress/{id}")]
             public async Task<IActionResult> DeleteExamWithPrograss(int id)
             {
                 var exam = await _examRepo.GetByIdFun(id);
