@@ -41,7 +41,7 @@ namespace API_PRO.Data
             table.Update(entity);
             await _db.SaveChangesAsync();
         }
-
+        //fix error
         public async Task DeleteFun(int id)
         {
             var entity = await GetByIdFun(id);
