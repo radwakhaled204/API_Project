@@ -5,7 +5,7 @@ namespace API_PRO.Models
     public class SubjectDto
     {
 
-        [Required]
+        [Required(ErrorMessage = "enter the name")]
         public string SubjectName { get; set; }
         //num of exam
         public int NumExams { get; set; }
