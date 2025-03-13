@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
 namespace API_PRO.Controllers
-{
+{//ComplaintsController
     public class ComplaintsController : Controller
     {
         //ComplaintsController private readonly IComplaintsRepo repo;
