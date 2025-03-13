@@ -17,6 +17,7 @@ namespace API_PRO.Models
     {
         [Required]
         public int itemId { get; set; }
+        [Required(ErrorMessage = "enter the name")]
         public string? itemName { get; set; }
 
         [Required]
