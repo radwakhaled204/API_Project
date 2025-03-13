@@ -15,7 +15,7 @@ namespace API_PRO.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
-    {
+    {//AccountController
         public AccountController(UserManager<Users> userManager, IConfiguration configuration, IMapper mapper )
         {
              _mapper = mapper;
