@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.JsonPatch;
 
 
 namespace API_PRO.Controllers
-{
+{//CategoriesController
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : Controller
@@ -42,8 +42,8 @@ namespace API_PRO.Controllers
         //[HttpPost]
         //public async Task<IActionResult> AddCategory(string category)
         //{
-        // Category c = new Category { Name = category };
-        //   await _uow.Categories.AddAsync(c);
+        //    Category c = new Category { Name = category };
+        //    await _uow.Categories.AddAsync(c);
         //    _uow.SaveChanges();
         //    return Ok(c);
         //}
