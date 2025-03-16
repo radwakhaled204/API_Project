@@ -10,7 +10,7 @@ namespace API_PRO.Data.Models
         [Key]
         public int Id { get; set; }
 
-        [MaxLength(50 , ErrorMessage ="The Max Length is 50")]
+        [MaxLength(50 , ErrorMessage ="The Max Length Is 50")]
         [Column("TheName")]
         public string Name { get; set; }
         public string? Notes { get; set; }
