@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using IWebHostEnvironment = Microsoft.AspNetCore.Hosting.IWebHostEnvironment;
 
 namespace API_PRO.Controllers
-{
+{//FileUploadController
     [ApiController]
 
     [Route("api/[controller]")]
