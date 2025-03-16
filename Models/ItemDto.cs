@@ -5,7 +5,7 @@ namespace API_PRO.Models
     public class ItemDto
     {
         [MaxLength(50)]
-        [Required(ErrorMessage = "enter the name")]
+        [Required(ErrorMessage = "Enter The Name")]
         public string Name { get; set; }
         public string? Notes { get; set; }
         public double Price { get; set; }
