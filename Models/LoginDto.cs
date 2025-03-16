@@ -5,7 +5,7 @@ namespace API_PRO.Models
 
     public class LoginDto
     {
-        [Required(ErrorMessage = "enter the name")]
+        [Required(ErrorMessage = "Enter The Name")]
         public string userName { get; set; }
 
        [Required]
