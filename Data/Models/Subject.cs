@@ -10,7 +10,7 @@ namespace API_PRO.Data.Models
         [Key]
         public int SubjectId { get; set; }
 
-        [Required(ErrorMessage = "Enter Subject Name")]
+        [Required(ErrorMessage = "Please Enter Subject Name")]
         public required string SubjectName { get; set; }
 
         public int NumExams { get; set; } = 0;
