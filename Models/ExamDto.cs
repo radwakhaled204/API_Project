@@ -5,7 +5,7 @@ namespace API_PRO.Models
     public class ExamDto
     {
         public string? QuestionType { get; set; }
-        [Required(ErrorMessage = "enter the name")]
+        [Required(ErrorMessage = "Enter The Name")]
         public string? ExamName { get; set; }
         public int? NumQuestions { get; set; }
         public int? NumCorrectQuestions { get; set; }
