@@ -26,7 +26,7 @@ namespace API_PRO.Data.Models
         [IgnoreDataMember]
         public virtual ApiItem? ApiItems { get; set; }
         // add a suitable DataAnnotations for your database
-        [Required(ErrorMessage ="Enter Price")]
+        [Required(ErrorMessage ="Enter Suitable Price")]
         [Precision(18, 2)]
         public decimal Price { get; set; }
     }
