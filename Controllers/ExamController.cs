@@ -5,7 +5,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_PRO.Controllers
-{ //ExamController
+{ 
     [Route("api/[controller]")]
     [ApiController]
     public class ExamController : Controller
