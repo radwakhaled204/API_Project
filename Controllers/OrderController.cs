@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_PRO.Controllers
-{//OrderController
+{
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : Controller
