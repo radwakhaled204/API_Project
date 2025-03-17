@@ -9,7 +9,7 @@ namespace API_PRO.Data.Models
     {
         [Key]
         public int SubjectId { get; set; }
-
+        [Column("sub_name", TypeName = "varchar(20)")]
         [Required(ErrorMessage = "Please Enter Subject Name")]
         public required string SubjectName { get; set; }
 
