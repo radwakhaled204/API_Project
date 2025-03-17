@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace API_PRO.Models
 {
@@ -8,6 +9,8 @@ namespace API_PRO.Models
         [Required(ErrorMessage = "Please Enter The Name")]
         public string Name { get; set; }
         public string? Notes { get; set; }
+        [Required(ErrorMessage = "Enter Suitable Price")]
+        
         public double Price { get; set; }
         public IFormFile? Image { get; set; }
         public int CategoryId { get; set; }
