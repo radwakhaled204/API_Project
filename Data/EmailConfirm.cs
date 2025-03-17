@@ -8,7 +8,7 @@ namespace API_PRO.Data
     {
         public async Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
-            var fMail = "yourmail";
+            var fMail = "radwaabouzed@gmail.com";
             var fPassword = "yourpassword";
 
             var theMsg = new MailMessage();
