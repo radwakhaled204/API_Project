@@ -8,12 +8,11 @@ namespace API_PRO.Mapping
     {
         public AutoMapperProfile()
         {
-          
+            CreateMap<Exam, ExamDto>();
+            CreateMap<ExamDto, Exam>();
             CreateMap<Subject, SubjectDto>();
-        
             CreateMap<SubjectDto, Subject>();
             CreateMap<Users, UserDto>();
-
             CreateMap<UserDto, Users>();
         }
     }
