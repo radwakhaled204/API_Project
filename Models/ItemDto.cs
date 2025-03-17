@@ -10,7 +10,7 @@ namespace API_PRO.Models
         public string Name { get; set; }
         public string? Notes { get; set; }
         [Required(ErrorMessage = "Enter Suitable Price")]
-        
+        [Precision(18, 2)]
         public double Price { get; set; }
         public IFormFile? Image { get; set; }
         public int CategoryId { get; set; }
